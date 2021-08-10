@@ -1,0 +1,78 @@
+# 10万
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:1620.3196609020233[sec]
+
+
+size = 100000
+batch = 100
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:1622.9967699050903[sec]
+
+
+size = 100000
+batch = 1000
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:1577.1677491664886[sec]
+
+
+    size = 100000
+    batch = 10000
+    
+    
+    
+    
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/bubble_sort.py
+Finished in 1933.365134716034 seconds.
+
+size = 100000
+
+
+
+
+#1万
+
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:16.059092044830322[sec]
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/bubble_sort.py
+Finished in 15.550301313400269 seconds.
+
+
+#1000
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:0.19312214851379395[sec]
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/bubble_sort.py
+Finished in 0.17106199264526367 seconds.
+
+
+
+
+#100
+
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/test4.py
+通過
+elapsed_time:0.10091114044189453[sec]
+
+
+/usr/bin/python3 /Users/asatosho/PycharmProject/parallel/week1/bubble_sort.py
+Finished in 0.0021398067474365234 seconds.
