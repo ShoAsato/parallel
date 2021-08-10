@@ -8,22 +8,23 @@ import time
 
 
 def bubble(param):
-    # x はリスト, iはリストの番地
+    #リスト 
     l = param
-
     len_l = len(l)
-    # flag を0に
+    
     flag = 1
 
 
     #print(current_process().name, ': This started at %s.' % time.ctime().split()[3])
 
-
+    
     while(flag):
         flag = 0
         for i in range(len_l - 1):
             a = l[i]
             b = l[i + 1]
+            
+            #交換
             if a > b:
                 l[i] = b
                 l[i + 1] = a
@@ -31,7 +32,7 @@ def bubble(param):
 
     return l
 
-
+#並列処理の後の結合、逐次処理と同じコード
 def bubble_single(param_s):
     ls = param_s
     len_ls = len(l)
@@ -58,42 +59,39 @@ def bubble_single(param_s):
 if __name__ == '__main__':
     start = time.time()
 
-    # プロセス数
-    p = Pool()
-
+    #プロセス数
+    p = Pool()  
+    
+    #リストサイズ
     size = 100000
+    
+    #バッチサイズ
     batch = 10000
 
-
+    #分割
     l = [random.randint(0, 100) for i in range(size)]
     l_20 = []
 
-
-
+    #リスト化
     for i in range(0, size, batch):
 
         l_20.append(l[i : i+batch])
 
-
-
-
-
-
+    
+    #並列処理
     params = [(l_20[l]) for l in range(size//batch)]
     return_l = p.map(bubble, params)
 
-
+    #結合
     list_new = []
     for i in range(len(return_l)):
         list_new += return_l[i]
 
     print("通過")
 
+    #最終結合
     bubblist = bubble_single(list_new)
     #print(bubblist)
-
-
-
 
 
 
